@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@300&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    /* color:rgb(34,56,82,0.9); */
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+   
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: scroll;
+
+}
+
+
+
+.main-section-bg{
+
+    /* background-image:linear-gradient(to left,rgb(36,59,85),rgb(20,30,48)); */
+    background-color: rgb(216, 247, 186);
+    
+    
+}
+
+
+.img-section{
+    display: inline;
+    width: 100px;
+    object-fit: contain;
+
+}
+
+#imgdiv { display:block;width: 1px;height: 1px;}
+
+.img-text{
+    margin-left: 10px;
+}
+
+.nav{
+    margin-left: 200px;
+
+
+}
+ 
+.nav-link h5{
+    color: #66aa00;
+   
+}
+
+.footer-bg-section{
+    background-color: #332f2c;
+    width: 100%;
+
+}
+
+.img-section{
+    width: 100vh;
+    height: 80vh;
+    object-fit: contain;
+}
+
+.card-container{
+    background-color: white;
+    /* background:  url("https://images.pexels.com/photos/347141/pexels-photo-347141.jpeg?cs=srgb&dl=pexels-tirachard-kumtanom-347141.jpg&fm=jpg"); */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    margin: 10px;
+}
+
+.line-tag{
+    margin-top: 20px;
+}
+
+
+.icon-box{
+    
+    padding: 30px;
+    margin: 10px;
+    background-image: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgb(189, 179, 179);
+  /* backdrop-filter: blur(0.8rem); */
+}
+
+
+
+.myButton {
+	box-shadow:inset 0px 1px 0px 0px #efdcfb;
+	background:linear-gradient(to left bottom, #84eb67, #84d954, #82c841, #7fb72f, #7ba61b);
+	background-color:#dfbdfa;
+	border-radius:6px;
+	border:1px solid #92ea80;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #92ea80;
+}
+.myButton:hover {
+	background-image: linear-gradient(to left bottom, #84eb67, #84d954, #82c841, #7fb72f, #7ba61b);
+	background-color:#92ea80;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+#rcorners {
+    border-radius: 20px;
+    padding-left: 5px;
+    /* padding-right:5px; */
+    /* padding-top:5px; */
+    width: 150px;
+    height: 40px;
+     border: 1px solid grey; 
+    /* position: absolute; */
+    background-color: #ffffff;
+    color: blue;
+    position: relative;
+   
+  }
+
+  .button-solid {
+      font-weight: 100;
+      font-size: 3rem;
+    width: auto;
+    border: none;
+    outline: none;
+    background-color: #ffffff;
+    /* position: absolute; */
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    -khtml-box-shadow: none;
+    position: absolute;
+    margin-left: 100px;
+    margin-top: 10px;
+    
+
+    
+}
+#qty_num{
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 10px;
+    
+
+}
+
+button-solid:focus {
+    border: none;
+    outline: none;
+   
+  
+}
+
+button-solid:hover {
+    border: none;
+    outline: none;
+    
+  
+}
+
+
+
+
+  .item img{
+      background-repeat: no-repeat;
+
+  }
+  item img{
+      width: 100px;
+  }
+
+
+  .img-container {
+    /* display: block; */
+    padding: 50px;
+    margin-top: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.carousel-inner{
+    object-fit: fill;
+}
+
+
+  
+  .price {
+    margin-left: 1rem;
+  }
+  
+  .modal-footer {
+    padding-top: 0rem;
+  }
+
+
+
+
+
+
+
+
+  /* Large desktops and laptops */
+/* @media (min-width: 1200px) {
+
+} */
+
+/* Landscape tablets and medium desktops */
+/* @media (min-width: 992px) and (max-width: 1199px) {
+
+} */
+
+/* Portrait tablets and small desktops */
+/* @media (min-width: 768px) and (max-width: 991px) {
+
+} */
+
+/* Landscape phones and portrait tablets */
+/* @media (max-width: 767px) {
+
+} */
+
+/* Portrait phones and smaller */
+/* @media (max-width: 576px) {
+    .text-container{
+        margin: 20px;
+        padding: 10px;
+    }
+
+} */
+
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+/*     
+    .img-container{
+        margin-left: 10px;
+        margin-right: 20px;
+    } */
+
+    .text-container{
+        width: auto;
+        margin: 20px;
+        /* padding: 10px; */
+    }
+    
+    
+    .card-container{
+        height: auto;
+    }
+
+    #rcorners{
+        margin-left: 5px;
+    }
+
+    .img-text{
+        float: left;
+        margin-left: 80px;
+
+    }
+
+    
+    html,body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        overflow-y: scroll;
+        overflow-x: scroll;
+    
+    }
+
+
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+   .img-container{
+       padding-left: 6px;
+       padding-right: 6px;
+   }
+
+   .bg-img{
+       margin-top: 20px;
+       padding-right: 5px;
+   }
+
+   .grape-section{
+       margin-top: 5px;
+   }
+
+   .img-text{
+ 
+    margin-left: 80px;
+
+}
+
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+    .img-text{
+        margin-left: 80px;
+
+    }
+ }
+
+ /* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }

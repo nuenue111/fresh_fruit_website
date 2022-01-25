@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+
+</head>
+
+<body>
+
+  <!-- header section -->
+  <section class="d-flex  main-section-bg  text-white text-center">
+    <div class="cover-container  d-flex w-100  p-3 mx-auto flex-column">
+      <header>
+        <div>
+          <!-- thumbnail img-responsive -->
+          <div id="imgdiv" class="justify-content-start ">
+            <img class=" justify-content-center mx-5  pb-3" src="images/leaf.png" style="width:50px;height:60px;"
+              alt="image1">
+
+          </div>
+          <h4 class="col-sm-3 img-text" style="color: #66aa00;">Fruits & Vegetable</h4>
+
+
+
+          <!-- <h3 class="float-md-start text-white mb-0">Bootstrap</h3> -->
+          <nav class="nav justify-content-end ">
+            <a class="nav-link  mx-5 text-decoration-none" href="#">
+              <h5>Home</h5>
+            </a>
+            <a class="nav-link mx-5 text-decoration-none" href="#">
+              <h5>Vegetable</h5>
+            </a>
+            <a class="nav-link mx-5  text-decoration-none" href="#">
+              <h5>Fruit</h5>
+            </a>
+            <a class="nav-link  mx-5 text-decoration-none" href="#">
+              <h5>ContactUs</h5>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+    </div>
+
+
+  </section>
+
+  <!-- detail item section -->
+  <section>
+
+    <div class="row mt-5 main-section-grid ">
+      <div class="col-md-6 mb-5 d-flex justify-content-center align-items-center ">
+        <div class="img-container  align-items-center">
+          <img src="images/apple1.jpg" alt="image1"
+            style="margin-top: 60px;margin-bottom: 50px;margin-left: 30px;margin-right: 30px;">
+
+        </div>
+
+      </div>
+      <div class="col-md-6 mb-5 text-container d-flex justify-content-center justify-content-center ">
+        <div class="bg-img">
+          <h1>Apple</h1>
+          <div>500 kyats</div>
+          <ul class="list-unstyled">
+
+            <li>Availability:
+              <span style="font-weight:bold; color:#66aa00" class="ex-text">
+                In Stock
+              </span>
+            </li>
+          </ul>
+          <p class="short-des">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum odio inventore facilis ipsum voluptatibus
+            vel, laudantium ad sequi sed omnis debitis consectetur, voluptas illo mollitia veniam suscipit dolorem?
+            Tenetur, minima!
+          </p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit esse animi, provident laborum eius
+            veritatis cum non iusto excepturi, assumenda at aliquam quo incidunt similique repellat molestiae
+            distinctio! Culpa, facere.</p>
+
+          <div class="row ps-lg-4 ">
+            <div class="col-md-2   ">
+              <h3 class="mb-5 pb-2"> Qty:</h3>
+            </div>
+
+            <!-- <div class="col-md-10  col-sm-10"> -->
+              <div class="row mt-4  " id="rcorners">
+
+                <!-- <div class="col-md-4  pe-4 "> -->
+
+                <div class="button" onclick="decreaseNumber()" style="padding-left: 10px;"><h4>-</h4>
+
+                </div>
+                <h4 id="qty_num"> 1</h4>
+                <button class="button-solid " onclick="increaseNumber()" style="width: 20px;height: 20px;">
+                  <h5>+</h5>
+                </button>
+
+              </div>
+
+
+
+            <!-- </div> -->
+
+          </div>
+
+          <script>
+            function decreaseNumber() {
+              // alert('hello');
+
+              let sub_num = document.getElementById("qty_num");
+              let qty_num = parseInt(sub_num.innerHTML);
+              console.log(sub_num.innerHTML);
+              console.log(typeof (qty_num));
+
+              if (qty_num >= 1) {
+
+                let qty_num1 = qty_num - 1;
+                sub_num.innerHTML = String(qty_num1);
+              }
+
+
+            }
+
+            function increaseNumber() {
+              // alert('hello');
+
+              let add_num = document.getElementById("qty_num");
+              let qty_num = parseInt(add_num.innerHTML);
+              console.log(qty_num);
+              console.log(typeof (qty_num));
+
+              if (qty_num >= 0) {
+
+                let qty_num1 = qty_num + 1;
+                add_num.innerHTML = String(qty_num1);
+
+              }
+
+
+
+            }
+          </script>
+
+          <a href="#" class="myButton  text-decoration-none" data-toggle="modal" data-target="#cartModal">Add TO
+            Cart</a>
+
+          <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header border-bottom-0">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    Your Shopping Cart
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="table table-image">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Qty</th>
+                        <th scope="col">Total</th>
+
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="w-25">
+                          <img src="images/apple1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                        </td>
+                        <td>Apple Fruits</td>
+                        <td>500kyats</td>
+                        <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                        <td>1000kyats</td>
+                        <!-- <td>
+                          <a href="#" class="btn btn-danger btn-sm">
+                            <i class="fa fa-times"></i>
+                          </a>
+                        </td> -->
+                      </tr>
+                    </tbody>
+                  </table>
+                  <div class="d-flex justify-content-end">
+                    <h5>Total: <span class="price text-success">1000kyats</span></h5>
+                  </div>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-between">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-success">Checkout</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+  </section>
+
+
+  <!-- carousel section -->
+  <section>
+
+
+    <div class="container  carousel-container mt-5 ">
+
+      <div id="myCarousel" class="carousel slide  " data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators ">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner mb-5">
+          <div class="item active  align-items-center justify-content-center ">
+            <img src="images/apple.jpg" alt="Los Angeles" style="width:100%;height: 60vh;">
+          </div>
+
+          <div class="item">
+            <img src="images/apple1.jpg" alt="Chicago1" style="width:100%;height: 60vh;">
+          </div>
+
+          <div class="item">
+            <img src="images/sb1.jpg" alt="Chicago2" style="width:100%;height: 60vh;">
+          </div>
+
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control " href="#myCarousel" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- <div class="col-md-12">
+         <div class="owl-carousel owl-theme">
+          <div class="custom-carousel-item">
+            <div class="img-wrapper">
+              <img src="images/download.jpg"/>
+               
+            </div>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, ab neque recusandae temporibus, maxime quos facilis nobis ducimus quibusdam omnis, id laboriosam sed voluptatem quia laudantium optio placeat quaerat voluptas.
+            </p>
+        </div>
+         </div>
+         
+
+      </div> -->
+
+
+  </section>
+
+
+
+  <!-- Recommand Cart Section -->
+
+
+  <section class=" mt-5">
+
+    <h1 class="text-center  text-center  mt-5">We Also Recommend</h1>
+    <div class="card-container  mt-5 d-flex justify-content-center align-items-center">
+      <div class="row card_row ">
+        <div class="col-md-3">
+          <div class="icon-box">
+            <div class="d-flex justify-content-center  align-items-center ">
+              <img src="images/apple1.jpg" class="card-img ">
+            </div>
+            <h3 class="text-dark  mt-2 ">Apple</h3>
+            <div class="row mt-3">
+              <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                <h5>300kyats</h5>
+              </div>
+              <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                <h5><a class="text-decoration-line-through"">500kyats</a></h5>
+                    </div>
+                  </div>
+                  <a href=" #" class="myButton mt-4 text-decoration-none" data-toggle="modal"
+                    data-target="#cartModal1">Add TO Cart</a>
+
+
+                  <div class="modal fade" id="cartModal1" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header border-bottom-0">
+                          <h5 class="modal-title" id="exampleModalLabel">
+                            Your Shopping Cart
+                          </h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <table class="table table-image">
+                            <thead>
+                              <tr>
+                                <th scope="col"></th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col">Total</th>
+
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td class="w-25">
+                                  <img src="images/apple1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                                </td>
+                                <td>Apple Fruits</td>
+                                <td>300kyats</td>
+                                <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                                <td>600kyats</td>
+                                <!-- <td>
+                                  <a href="#" class="btn btn-danger btn-sm">
+                                    <i class="fa fa-times"></i>
+                                  </a>
+                                </td> -->
+                              </tr>
+                            </tbody>
+                          </table>
+                          <div class="d-flex justify-content-end">
+                            <h5>Total: <span class="price text-success">600kyats</span></h5>
+                          </div>
+                        </div>
+                        <div class="modal-footer border-top-0 d-flex justify-content-between">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success">Checkout</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="icon-box">
+                <div class="d-flex justify-content-center  align-items-center ">
+                  <img src="images/sb.jpg" class="card-img ">
+                </div>
+                <h3 class="text-dark  mt-2 ">strawberry</h3>
+                <div class="row mt-3">
+                  <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                    <h5>1000kyats</h5>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                    <h5><a class="text-decoration-line-through">2000kyats</a></h5>
+                  </div>
+                </div>
+                <a href="#" class="myButton mt-4 text-decoration-none" data-toggle="modal" data-target="#cartModal2">Add
+                  TO
+                  Cart</a>
+
+                <div class="modal fade" id="cartModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Your Shopping Cart
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-image">
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Product</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Qty</th>
+                              <th scope="col">Total</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="w-25">
+                                <img src="images/sb1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                              </td>
+                              <td>Strawberry Fruits</td>
+                              <td>1000kyats</td>
+                              <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                              <td>2000kyats</td>
+                              <!-- <td>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                  <i class="fa fa-times"></i>
+                                </a>
+                              </td> -->
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="d-flex justify-content-end">
+                          <h5>Total: <span class="price text-success">2000kyats</span></h5>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0 d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Checkout</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="icon-box">
+                <div class="d-flex justify-content-center  align-items-center ">
+                  <img src="images/mango1.jpg" class="card-img ">
+                </div>
+                <h3 class="text-dark  mt-2 ">Mango</h3>
+                <div class="row mt-3">
+                  <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                    <h5>300kyats</h5>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                    <h5><a class="text-decoration-line-through">500kyats</a></h5>
+                  </div>
+                </div>
+                <a href="#" class="myButton mt-4 text-decoration-none" data-toggle="modal" data-target="#cartModal3">Add
+                  TO
+                  Cart</a>
+
+                <div class="modal fade" id="cartModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Your Shopping Cart
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-image">
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Product</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Qty</th>
+                              <th scope="col">Total</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="w-25">
+                                <img src="images/mango1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                              </td>
+                              <td>Mango Fruits</td>
+                              <td>300kyats</td>
+                              <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                              <td>600kyats</td>
+                              <!-- <td>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                  <i class="fa fa-times"></i>
+                                </a>
+                              </td> -->
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="d-flex justify-content-end">
+                          <h5>Total: <span class="price text-success">600kyats</span></h5>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0 d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Checkout</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="icon-box">
+                <div class="d-flex justify-content-center  align-items-center ">
+                  <img src="images/grape1.jpg" class="card-img ">
+                </div>
+                <h3 class="text-dark  mt-5 ">Grape</h3>
+                <div class="row ">
+                  <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                    <h5>1000kyats</h5>
+                  </div>
+                  <div class="col-md-6 d-flex justify-content-center  align-items-center ">
+                    <h5><a class="text-decoration-line-through">1500kyats</a></h5>
+                  </div>
+                </div>
+                <a href="#" class="myButton mt-3 text-decoration-none " data-toggle="modal" data-target="#cartModal4">Add
+                  TO
+                  Cart</a>
+
+                <div class="modal fade" id="cartModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header border-bottom-0">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Your Shopping Cart
+                        </h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <table class="table table-image">
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Product</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Qty</th>
+                              <th scope="col">Total</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="w-25">
+                                <img src="images/grape1.jpg" class="img-fluid img-thumbnail" alt="Sheep">
+                              </td>
+                              <td>Grape Fruits</td>
+                              <td>1000kyats</td>
+                              <td class="qty"><input type="text" class="form-control" id="input1" value="2"></td>
+                              <td>2000kyats</td>
+                              <!-- <td>
+                                <a href="#" class="btn btn-danger btn-sm">
+                                  <i class="fa fa-times"></i>
+                                </a>
+                              </td> -->
+                            </tr>
+                          </tbody>
+                        </table>
+                        <div class="d-flex justify-content-end">
+                          <h5>Total: <span class="price text-success">2000kyats</span></h5>
+                        </div>
+                      </div>
+                      <div class="modal-footer border-top-0 d-flex justify-content-between">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-success">Checkout</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+  </section>
+
+
+  <!-- footer Section -->
+  <footer class=" text-white text-center text-lg-start footer-bg-section">
+    <div class="container p-4">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-white ">About Us</h5>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste atque ea quis
+            molestias. Fugiat pariatur maxime quis culpa corporis vitae repudiandae aliquam
+            voluptatem veniam, est atque cumque eum delectus sint!
+          </p>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase text-white">New Products</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Apple</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Orange</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Lemon</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Mango</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0 text-white">Information</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">About Us</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Delivery Information</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white">Contact Us</a>
+            </li>
+            <li>
+              <a href="#!" class=" text-decoration-none text-white ">Specials</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row   p-4 text-white " style="background-color:#16070a">
+
+      <div> © 2022 Copyright:
+        <a class="  text-center  text-white" href="https://mdbootstrap.com/">wwww.freshfruit.com</a>
+      </div>
+
+
+    </div>
+
+  </footer>
+
+
+
+</body>
+
+</html>
